@@ -1,10 +1,8 @@
 import React from "react"
-import StockList from "./StockList"
-import PortfolioSummary from "./PortfolioSummary"
 import isEqual from "lodash/isEqual"
-import { IStockList } from "../types"
+import { IStockList, PortfolioSummary, StockList } from "src/screens/portfolio"
 
-function PortfolioScreen(props: IStockList): React.JSX.Element {
+function PortfolioContainer(props: IStockList): React.JSX.Element {
   const { stockData, reload } = props
   return (
     <>
@@ -18,4 +16,4 @@ function areItemsEqual(prevProps: IStockList, nextProps: IStockList) {
   return isEqual(prevProps.stockData, nextProps.stockData)
 }
 
-export default React.memo(PortfolioScreen, areItemsEqual)
+export const MemoizedPortfolioContainer = React.memo(PortfolioContainer, areItemsEqual);

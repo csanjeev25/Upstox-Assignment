@@ -11,7 +11,7 @@ type Props = {
 
 const API_TIMEOUT_DURATION = 15000;
 
-const useFetch = (props: Props) => {
+export const useFetch = (props: Props) => {
   const {
     url,
     connectivityToggle = false,
@@ -93,5 +93,3 @@ const useFetch = (props: Props) => {
     reload,
   };
 };
-
-export default useFetch;

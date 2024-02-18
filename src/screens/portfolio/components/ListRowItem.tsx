@@ -1,16 +1,10 @@
 import React from "react"
 import { StyleSheet, View } from "react-native"
-import { spacing } from "../../../values/theme/spacing"
-import { Text } from "../../../components"
-import { colors, typography } from "../../../values/theme"
+import { spacing, colors, typography } from "src/values"
+import { Text } from "src/components"
+import { IRowItem } from "src/screens/portfolio"
 
-interface Props {
-  leftText: string
-  rightTitleText: string
-  rightValueText: string
-}
-
-function RowItem(props: Props) {
+export function RowItem(props: IRowItem) {
   const { leftText, rightTitleText, rightValueText } = props
 
   return (
@@ -25,8 +19,6 @@ function RowItem(props: Props) {
     </View>
   )
 }
-
-export default RowItem;
 
 const styles = StyleSheet.create({
   summary: {

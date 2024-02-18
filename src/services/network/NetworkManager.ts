@@ -1,6 +1,6 @@
-import { checkStatus, parseJSON } from "./api.utils";
+import { checkStatus, parseJSON } from "src/services";
 
-const networkManager = {
+export const networkManager = {
   async makeGetRequest(url: string, abortControllerSignal: AbortSignal) {
     return fetch(url, {
       method: 'GET',
@@ -15,5 +15,3 @@ const networkManager = {
       })
   },
 };
-
-export default networkManager;

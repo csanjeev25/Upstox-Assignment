@@ -1,17 +1,9 @@
 import React from "react"
-import { UserHoldings } from "../types"
 import { StyleSheet, View } from "react-native"
-import { getTotalProfitLoss } from "../helper/finance"
-import PortfolioBreakdown from "./PortfolioBreakdown"
-import { strings } from "src/values/strings"
-import BreakDownRowItem from "./BreakdownItemRow"
-import { spacing } from "src/values/theme"
+import { BreakDownRowItem, IPortfolioSummary, PortfolioBreakdown, getTotalProfitLoss } from "src/screens/portfolio"
+import { spacing } from "src/values"
 
-export interface IPortfolioSummary {
-  stockData: UserHoldings[]
-}
-
-function PortfolioSummary(props: IPortfolioSummary) {
+export function PortfolioSummary(props: IPortfolioSummary) {
   const { stockData } = props
 
   return (
@@ -27,8 +19,6 @@ function PortfolioSummary(props: IPortfolioSummary) {
     </View>
   )
 }
-
-export default PortfolioSummary
 
 const styles = StyleSheet.create({
   wrapper: {

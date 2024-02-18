@@ -1,12 +1,16 @@
 import { useState } from "react"
-import { UserHoldings } from "../types"
-import { getTodayPNL, getTotalCurrentValue, getTotalInvestment } from "../helper/finance"
+import {
+  UserHoldings,
+  getTodayPNL,
+  getTotalCurrentValue,
+  getTotalInvestment,
+} from "src/screens/portfolio"
 
 type Props = {
   stockData: UserHoldings[]
 }
 
-const useSummary = (props: Props) => {
+export const useSummary = (props: Props) => {
   const { stockData } = props
   const [expanded, setExpanded] = useState(false)
 
@@ -24,9 +28,9 @@ const useSummary = (props: Props) => {
       rightText: getTotalInvestment(stockData),
     },
     {
-        leftText: "Today's Profit & Loss: ",
-        rightText: getTodayPNL(stockData),
-    }
+      leftText: "Today's Profit & Loss: ",
+      rightText: getTodayPNL(stockData),
+    },
   ]
 
   return {
@@ -35,5 +39,3 @@ const useSummary = (props: Props) => {
     breakdownItems,
   }
 }
-
-export default useSummary

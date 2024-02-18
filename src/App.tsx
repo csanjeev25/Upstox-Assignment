@@ -1,7 +1,7 @@
 import React from "react"
 import { StatusBar, StyleSheet } from "react-native"
 import { SafeAreaProvider } from "react-native-safe-area-context"
-import PortfolioScreen from "./screens/portfolio/components/PortfolioScreen"
+import { PortfolioScreen } from "src/screens/portfolio"
 
 function App(): React.JSX.Element {
 

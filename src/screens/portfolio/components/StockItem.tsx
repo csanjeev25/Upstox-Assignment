@@ -1,18 +1,10 @@
 import React from "react"
 import { StyleSheet, View } from "react-native"
-import { UserHoldings } from "../types"
-import { spacing } from "../../../values/theme/spacing"
-import { Text } from "../../../components"
-import { colors, typography } from "../../../values/theme"
-import { strings } from "../../../values/strings"
-import { calculateProfitLoss } from "../helper/finance"
+import { spacing, colors, typography, strings } from "src/values"
+import { Text } from "src/components"
+import { calculateProfitLoss, IStockItem } from "src/screens/portfolio"
 
-interface Props {
-  stockData: UserHoldings
-  index: number
-}
-
-function StockItem(props: Props) {
+export function StockItem(props: IStockItem) {
   const { stockData, index } = props
 
   const { symbol, quantity, ltp, avgPrice, close } = stockData
@@ -49,8 +41,6 @@ function StockItem(props: Props) {
     </View>
   )
 }
-
-export default StockItem
 
 const styles = StyleSheet.create({
   summary: {

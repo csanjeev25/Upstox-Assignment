@@ -4,10 +4,17 @@ import { Text } from "./Text"
 import { colors, spacing, typography } from "../values/theme"
 
 interface IProps {
+  /*
+    Optional display text
+  */
   displayText?: string
+  /*
+    on click retry
+  */
   onClickHandler: () => void
 }
-function ListEmptyScreen(props: IProps) {
+
+export function ListEmptyScreen(props: IProps) {
   const { displayText, onClickHandler } = props
   return (
     <View style={styles.container}>
@@ -18,8 +25,6 @@ function ListEmptyScreen(props: IProps) {
     </View>
   )
 }
-
-export default ListEmptyScreen
 
 const styles = StyleSheet.create({
   container: {

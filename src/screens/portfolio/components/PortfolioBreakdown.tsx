@@ -1,19 +1,12 @@
-import React, { useState } from "react"
-import { UserHoldings } from "../types"
+import React from "react"
+import { IPortfolioSummary, BreakDownRowItem, IBreakDownRowItem, useSummary } from "src/screens/portfolio"
 import { StyleSheet, View } from "react-native"
-import TouchableButton from "../../../components/TouchableButton"
-import { testIdProps } from "../../../utils/test.util"
-import { colors, spacing, typography } from "../../../values/theme"
-import Arrow from "../../../svg/Arrow"
-import { Text } from "../../../components/Text"
-import BreakDownRowItem, { IBreakDownRowItem } from "./BreakdownItemRow"
-import useSummary from "../hooks/useSummary"
+import { TouchableButton } from "src/components"
+import { testIdProps } from "src/utils"
+import { colors, spacing } from "src/values"
+import { Arrow } from "src/svg"
 
-interface IPortfolioSummary {
-  stockData: UserHoldings[]
-}
-
-function PortfolioBreakdown(props: IPortfolioSummary) {
+export function PortfolioBreakdown(props: IPortfolioSummary) {
   const { stockData } = props
   const { expanded, onClickArrow, breakdownItems } = useSummary({ stockData })
 
@@ -48,8 +41,6 @@ function PortfolioBreakdown(props: IPortfolioSummary) {
     </View>
   )
 }
-
-export default PortfolioBreakdown
 
 const styles = StyleSheet.create({
   arrowWrapper: {

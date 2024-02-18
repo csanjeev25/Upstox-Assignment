@@ -1,4 +1,4 @@
-import { spacing } from "../values/theme";
+import { spacing } from "src/values";
 
 export const IosUtils = {
   getIosElevation: (elevation = spacing.xxxs) => {

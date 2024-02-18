@@ -1,4 +1,4 @@
-import { UserHoldings } from "../types"
+import { UserHoldings } from "src/screens/portfolio"
 
 export const calculateProfitLoss = (ltp: number, avgPrice: number, quantity: number): number => {
   return ltp * quantity - avgPrice * quantity

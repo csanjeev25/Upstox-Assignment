@@ -14,7 +14,7 @@ interface ITouchableButton {
   activeOpacity?: number;
 }
 
-const TouchableButton = (props: ITouchableButton) => {
+export const TouchableButton = (props: ITouchableButton) => {
   const {
     children,
     onPress,
@@ -39,5 +39,3 @@ const TouchableButton = (props: ITouchableButton) => {
     </TouchableOpacity>
   );
 };
-
-export default TouchableButton;

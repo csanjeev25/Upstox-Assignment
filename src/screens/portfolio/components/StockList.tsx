@@ -1,18 +1,11 @@
-import React from "react"
-import { StyleSheet, Text, View } from "react-native"
-import StockItem from "./StockItem"
-import { colors, spacing } from "../../../values/theme/"
-import { IStockList, UserHoldings } from "../types"
-import ListEmptyScreen from "../../../components/ListEmptyScreen"
-import { isNullOrEmptyArray } from "../../../utils/common.utils"
-import { ScrollView } from "react-native-gesture-handler"
+import React from "react";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
+import { IRenderItem, IStockList, StockItem } from "src/screens/portfolio";
+import { colors, spacing } from "src/values";
+import { ListEmptyScreen } from "src/components";
+import { isNullOrEmptyArray } from "src/utils";
 
-interface IRenderItem {
-  item: UserHoldings | null | undefined
-  index: number
-}
-
-function StockList(props: IStockList) {
+export function StockList(props: IStockList) {
   const { stockData, reload } = props
 
   const rowRenderer = ({ item, index }: IRenderItem) => {
@@ -49,8 +42,6 @@ function StockList(props: IStockList) {
     </View>
   )
 }
-
-export default StockList
 
 const styles = StyleSheet.create({
   containerStyle: {

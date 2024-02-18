@@ -1,17 +1,43 @@
-import React from "react"
-import { ActivityIndicator, StyleSheet, View } from "react-native"
-import { colors, spacing } from "../values/theme"
-import ListEmptyScreen from "./ListEmptyScreen"
-import { strings } from "../values/strings"
+import React, { SetStateAction } from "react";
+import { ActivityIndicator, StyleSheet, View } from "react-native";
+import { colors, spacing, strings } from "src/values";
+import { ListEmptyScreen } from "src/components";
 
-const EmbryonicComponent = ({
+export interface EmbryonicComponentProps {
+  /**
+   * Optional to retry on network
+   */
+  setConnectivityToggle?: SetStateAction<boolean>
+  /**
+   * Optional check if loading
+   */
+  isLoading?: boolean
+  /**
+   * data to display
+   */
+  data?: object | Array<any> | undefined | null
+  /**
+   * Optional check if internet is connected.
+   */
+  hasInternetConnection?: boolean | null
+  /**
+   * Optional check if any error.
+   */
+  hasError?: boolean
+  /**
+   * Override try again operation.
+   */
+  tryAgain?: () => void
+}
+
+export const EmbryonicComponent = ({
   setConnectivityToggle,
   isLoading,
   data,
   hasInternetConnection,
   hasError,
   tryAgain,
-}: any) => {
+}: EmbryonicComponentProps) => {
   const tryAgainHandler = () => {
     typeof tryAgain === "function" ? tryAgain() : setConnectivityToggle?.((prev) => !prev)
   }
@@ -55,5 +81,3 @@ const styles = StyleSheet.create({
     paddingBottom: spacing.grid_13_half,
   },
 })
-
-export default EmbryonicComponent

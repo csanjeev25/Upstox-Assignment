@@ -1,5 +1,4 @@
-import networkManager from "./NetworkManager"
-import { ERROR, RESPONSE_CODE } from "./api.constants"
+import { networkManager, ERROR, RESPONSE_CODE } from "src/services"
 
 const DEFAULT_API_TIME_OUT = 15000
 

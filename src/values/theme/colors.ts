@@ -1,5 +1,3 @@
-// TODO: write documentation for colors and palette in own markdown file and add links from here
-
 const palette = {
   white: "#FFFFFF",
   greyishBrown: '#484848',

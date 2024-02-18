@@ -1,17 +1,10 @@
-import React from "react"
-import { StyleSheet, View, ViewStyle, StyleProp } from "react-native"
-import { spacing } from "../../../values/theme/spacing"
-import { Text } from "../../../components"
-import { colors, typography } from "../../../values/theme"
-import { strings } from "src/values/strings"
+import React from "react";
+import { StyleSheet, View } from "react-native";
+import { spacing, colors, typography, strings  } from "src/values";
+import { Text } from "src/components";
+import { IBreakDownRowItem } from "src/screens/portfolio";
 
-export interface IBreakDownRowItem {
-  leftText: string
-  rightText: string
-  style?: StyleProp<ViewStyle>
-}
-
-function BreakDownRowItem(props: IBreakDownRowItem) {
+export function BreakDownRowItem(props: IBreakDownRowItem) {
   const { leftText, rightText, style } = props
 
   return (
@@ -23,8 +16,6 @@ function BreakDownRowItem(props: IBreakDownRowItem) {
     </View>
   )
 }
-
-export default BreakDownRowItem;
 
 const styles = StyleSheet.create({
   summary: {

@@ -1,14 +1,12 @@
 import React from "react"
 import { View, StyleSheet } from "react-native"
-import { Header } from "../../../components/Header"
-import { strings } from "../../../values/strings"
-import useFetch from "../../../hooks/useFetch"
-import apiUrls from "../../../services/network/api.urls"
-import { colors } from "../../../values/theme"
-import EmbryonicComponent from "../../../components/EmbryonicComponent"
-import PortfolioContainer from "./PortfolioContainer"
+import { Header, EmbryonicComponent } from "src/components"
+import { strings, colors } from "src/values"
+import { useFetch } from "src/hooks"
+import { apiUrls } from "src/services"
+import { MemoizedPortfolioContainer } from "src/screens/portfolio"
 
-function PortfolioScreen(): React.JSX.Element {
+export function PortfolioScreen(): React.JSX.Element {
   const {
     hasInternetConnection,
     hasError,
@@ -31,7 +29,6 @@ function PortfolioScreen(): React.JSX.Element {
         hasError={hasError}
         hasInternetConnection={hasInternetConnection && !isConnectionTimeout}
         tryAgain={reload}
-        showHeader
       />
     )
   }
@@ -39,7 +36,7 @@ function PortfolioScreen(): React.JSX.Element {
   return (
     <View style={styles.container}>
       <Header title={strings.headerTitle} />
-      <PortfolioContainer stockData={stockData} reload={retry} />
+      <MemoizedPortfolioContainer stockData={stockData} reload={retry} />
     </View>
   )
 }
@@ -47,5 +44,3 @@ function PortfolioScreen(): React.JSX.Element {
 const styles = StyleSheet.create({
   container: { backgroundColor: colors.palette.greyish, flex: 1, flexDirection: "column" },
 })
-
-export default PortfolioScreen
