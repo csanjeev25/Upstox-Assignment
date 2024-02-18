@@ -7,7 +7,7 @@ function App(): React.JSX.Element {
 
   //TODO: Can Implement Navigation later as more screens are added
   return (
-    <SafeAreaProvider>
+    <SafeAreaProvider style={{ flex: 1, backgroundColor: 'white' }}>
       <StatusBar barStyle={"light-content"} backgroundColor='white' />
       <PortfolioScreen />
     </SafeAreaProvider>
