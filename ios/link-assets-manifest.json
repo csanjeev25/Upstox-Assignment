@@ -1,0 +1,29 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/Lato-Bold.ttf",
+      "sha1": "b836e7b5a9a9973f47bbd7714bfaa0b24684b0de"
+    },
+    {
+      "path": "assets/fonts/Lato-Italic.ttf",
+      "sha1": "ebf006602bcfc0467d29735fdf3481bb6121860e"
+    },
+    {
+      "path": "assets/fonts/Lato-Regular.ttf",
+      "sha1": "698cd2698a05804d3a028c514d2a071e6fa393ce"
+    },
+    {
+      "path": "assets/fonts/Lato-Semibold.ttf",
+      "sha1": "bb36d50ddf764b413a5102c56203817e9bf13e98"
+    },
+    {
+      "path": "assets/fonts/Roboto-Medium.ttf",
+      "sha1": "01d4ccbdf1ba0a8e14497521686e1246f8dc57c4"
+    },
+    {
+      "path": "assets/fonts/RupeeSymbol.ttf",
+      "sha1": "a53f232088937544ecd06794ca90a6bc6267db35"
+    }
+  ]
+}
