@@ -3,13 +3,14 @@ import { ScrollView, StyleSheet, Text, View } from "react-native";
 import { IRenderItem, IStockList, StockItem } from "src/screens/portfolio";
 import { colors, spacing } from "src/values";
 import { ListEmptyScreen } from "src/components";
-import { isNullOrEmptyArray } from "src/utils";
+import { isNullOrEmptyArray, testIdProps } from "src/utils";
+import { checkIfValidStock } from "src/screens/portfolio/helper/checks";
 
 export function StockList(props: IStockList) {
   const { stockData, reload } = props
 
   const rowRenderer = ({ item, index }: IRenderItem) => {
-    if (!item) {
+    if (checkIfValidStock(item)) {
       return null
     }
     return (
@@ -31,9 +32,9 @@ export function StockList(props: IStockList) {
   return (
     <View style={styles.containerStyle}>
       {isNullOrEmptyArray(stockData) ? (
-        <ListEmptyScreen onClickHandler={reload} />
+        <ListEmptyScreen onClickHandler={reload} {...testIdProps("stock-list-empty")}/>
       ) : (
-        <ScrollView contentContainerStyle={styles.container}>
+        <ScrollView contentContainerStyle={styles.container} {...testIdProps("stock-list-scroll")}>
           {stockData?.map((item, index) => (
             rowRenderer({item, index})
           ))}
@@ -57,4 +58,5 @@ const styles = StyleSheet.create({
     width: '100%',
     flexDirection: 'column',
   }
-})
+});
+

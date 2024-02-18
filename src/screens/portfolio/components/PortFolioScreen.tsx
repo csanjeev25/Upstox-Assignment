@@ -5,6 +5,7 @@ import { strings, colors } from "src/values"
 import { useFetch } from "src/hooks"
 import { apiUrls } from "src/services"
 import { MemoizedPortfolioContainer } from "src/screens/portfolio"
+import { testIdProps } from "src/utils"
 
 export function PortfolioScreen(): React.JSX.Element {
   const {
@@ -29,12 +30,13 @@ export function PortfolioScreen(): React.JSX.Element {
         hasError={hasError}
         hasInternetConnection={hasInternetConnection && !isConnectionTimeout}
         tryAgain={reload}
+        {...testIdProps("embryonic-component")}
       />
     )
   }
 
   return (
-    <View style={styles.container}>
+    <View style={styles.container} {...testIdProps("portfolio-screen")}>
       <Header title={strings.headerTitle} />
       <MemoizedPortfolioContainer stockData={stockData} reload={retry} />
     </View>

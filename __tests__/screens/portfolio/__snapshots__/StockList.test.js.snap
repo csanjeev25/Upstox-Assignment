@@ -1,0 +1,1008 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StockList /> matches snapshot when empty 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#FFFFFF",
+    }
+  }
+>
+  <RCTScrollView
+    accessibilityLabel="stock-list-scroll"
+    contentContainerStyle={
+      {
+        "flexDirection": "column",
+        "width": "100%",
+      }
+    }
+    testID="stock-list-scroll"
+  >
+    <View />
+  </RCTScrollView>
+</View>
+`;
+
+exports[`<StockList /> matches snapshot with stock data 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#FFFFFF",
+    }
+  }
+>
+  <RCTScrollView
+    accessibilityLabel="stock-list-scroll"
+    contentContainerStyle={
+      {
+        "flexDirection": "column",
+        "width": "100%",
+      }
+    }
+    testID="stock-list-scroll"
+  >
+    <View>
+      <View>
+        <View
+          style={
+            {
+              "backgroundColor": "#FFFFFF",
+              "paddingHorizontal": 16,
+              "paddingVertical": 12,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+              }
+            }
+          >
+            <Text
+              style={
+                [
+                  [
+                    {
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    },
+                    {
+                      "fontFamily": "Lato-Regular",
+                    },
+                    {
+                      "color": "#484848",
+                    },
+                  ],
+                  {
+                    "fontFamily": "Lato-Bold",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              TCS
+            </Text>
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Text
+                style={
+                  [
+                    [
+                      {
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      },
+                      {
+                        "fontFamily": "Lato-Regular",
+                      },
+                      {
+                        "color": "#484848",
+                      },
+                    ],
+                    undefined,
+                    undefined,
+                  ]
+                }
+              >
+                LTP: 
+              </Text>
+              <Text
+                style={
+                  [
+                    [
+                      {
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      },
+                      {
+                        "fontFamily": "Lato-Regular",
+                      },
+                      {
+                        "color": "#484848",
+                      },
+                    ],
+                    {
+                      "fontFamily": "Lato-Bold",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                ₹ 3250.50
+              </Text>
+            </View>
+          </View>
+          <View
+            style={
+              {
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+              }
+            }
+          >
+            <Text
+              style={
+                [
+                  [
+                    {
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    },
+                    {
+                      "fontFamily": "Lato-Regular",
+                    },
+                    {
+                      "color": "#484848",
+                    },
+                  ],
+                  undefined,
+                  undefined,
+                ]
+              }
+            >
+              10
+            </Text>
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Text
+                style={
+                  [
+                    [
+                      {
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      },
+                      {
+                        "fontFamily": "Lato-Regular",
+                      },
+                      {
+                        "color": "#484848",
+                      },
+                    ],
+                    undefined,
+                    undefined,
+                  ]
+                }
+              >
+                P/L: 
+              </Text>
+              <Text
+                style={
+                  [
+                    [
+                      {
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      },
+                      {
+                        "fontFamily": "Lato-Regular",
+                      },
+                      {
+                        "color": "#484848",
+                      },
+                    ],
+                    {
+                      "fontFamily": "Lato-Bold",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                ₹ 7702.00
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "backgroundColor": "#efefef",
+              "height": 1,
+              "marginLeft": 20,
+              "marginRight": 20,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View
+          style={
+            {
+              "backgroundColor": "#FFFFFF",
+              "paddingHorizontal": 16,
+              "paddingVertical": 12,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+              }
+            }
+          >
+            <Text
+              style={
+                [
+                  [
+                    {
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    },
+                    {
+                      "fontFamily": "Lato-Regular",
+                    },
+                    {
+                      "color": "#484848",
+                    },
+                  ],
+                  {
+                    "fontFamily": "Lato-Bold",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              Wipro
+            </Text>
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Text
+                style={
+                  [
+                    [
+                      {
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      },
+                      {
+                        "fontFamily": "Lato-Regular",
+                      },
+                      {
+                        "color": "#484848",
+                      },
+                    ],
+                    undefined,
+                    undefined,
+                  ]
+                }
+              >
+                LTP: 
+              </Text>
+              <Text
+                style={
+                  [
+                    [
+                      {
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      },
+                      {
+                        "fontFamily": "Lato-Regular",
+                      },
+                      {
+                        "color": "#484848",
+                      },
+                    ],
+                    {
+                      "fontFamily": "Lato-Bold",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                ₹ 550.20
+              </Text>
+            </View>
+          </View>
+          <View
+            style={
+              {
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+              }
+            }
+          >
+            <Text
+              style={
+                [
+                  [
+                    {
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    },
+                    {
+                      "fontFamily": "Lato-Regular",
+                    },
+                    {
+                      "color": "#484848",
+                    },
+                  ],
+                  undefined,
+                  undefined,
+                ]
+              }
+            >
+              80
+            </Text>
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Text
+                style={
+                  [
+                    [
+                      {
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      },
+                      {
+                        "fontFamily": "Lato-Regular",
+                      },
+                      {
+                        "color": "#484848",
+                      },
+                    ],
+                    undefined,
+                    undefined,
+                  ]
+                }
+              >
+                P/L: 
+              </Text>
+              <Text
+                style={
+                  [
+                    [
+                      {
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      },
+                      {
+                        "fontFamily": "Lato-Regular",
+                      },
+                      {
+                        "color": "#484848",
+                      },
+                    ],
+                    {
+                      "fontFamily": "Lato-Bold",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                ₹ 13592.00
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "backgroundColor": "#efefef",
+              "height": 1,
+              "marginLeft": 20,
+              "marginRight": 20,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View
+          style={
+            {
+              "backgroundColor": "#FFFFFF",
+              "paddingHorizontal": 16,
+              "paddingVertical": 12,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+              }
+            }
+          >
+            <Text
+              style={
+                [
+                  [
+                    {
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    },
+                    {
+                      "fontFamily": "Lato-Regular",
+                    },
+                    {
+                      "color": "#484848",
+                    },
+                  ],
+                  {
+                    "fontFamily": "Lato-Bold",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              SBI
+            </Text>
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Text
+                style={
+                  [
+                    [
+                      {
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      },
+                      {
+                        "fontFamily": "Lato-Regular",
+                      },
+                      {
+                        "color": "#484848",
+                      },
+                    ],
+                    undefined,
+                    undefined,
+                  ]
+                }
+              >
+                LTP: 
+              </Text>
+              <Text
+                style={
+                  [
+                    [
+                      {
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      },
+                      {
+                        "fontFamily": "Lato-Regular",
+                      },
+                      {
+                        "color": "#484848",
+                      },
+                    ],
+                    {
+                      "fontFamily": "Lato-Bold",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                ₹ 650.50
+              </Text>
+            </View>
+          </View>
+          <View
+            style={
+              {
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+              }
+            }
+          >
+            <Text
+              style={
+                [
+                  [
+                    {
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    },
+                    {
+                      "fontFamily": "Lato-Regular",
+                    },
+                    {
+                      "color": "#484848",
+                    },
+                  ],
+                  undefined,
+                  undefined,
+                ]
+              }
+            >
+              12
+            </Text>
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Text
+                style={
+                  [
+                    [
+                      {
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      },
+                      {
+                        "fontFamily": "Lato-Regular",
+                      },
+                      {
+                        "color": "#484848",
+                      },
+                    ],
+                    undefined,
+                    undefined,
+                  ]
+                }
+              >
+                P/L: 
+              </Text>
+              <Text
+                style={
+                  [
+                    [
+                      {
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      },
+                      {
+                        "fontFamily": "Lato-Regular",
+                      },
+                      {
+                        "color": "#484848",
+                      },
+                    ],
+                    {
+                      "fontFamily": "Lato-Bold",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                ₹ -357.60
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "backgroundColor": "#efefef",
+              "height": 1,
+              "marginLeft": 20,
+              "marginRight": 20,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View
+          style={
+            {
+              "backgroundColor": "#FFFFFF",
+              "paddingHorizontal": 16,
+              "paddingVertical": 12,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+              }
+            }
+          >
+            <Text
+              style={
+                [
+                  [
+                    {
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    },
+                    {
+                      "fontFamily": "Lato-Regular",
+                    },
+                    {
+                      "color": "#484848",
+                    },
+                  ],
+                  {
+                    "fontFamily": "Lato-Bold",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              TataMotors
+            </Text>
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Text
+                style={
+                  [
+                    [
+                      {
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      },
+                      {
+                        "fontFamily": "Lato-Regular",
+                      },
+                      {
+                        "color": "#484848",
+                      },
+                    ],
+                    undefined,
+                    undefined,
+                  ]
+                }
+              >
+                LTP: 
+              </Text>
+              <Text
+                style={
+                  [
+                    [
+                      {
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      },
+                      {
+                        "fontFamily": "Lato-Regular",
+                      },
+                      {
+                        "color": "#484848",
+                      },
+                    ],
+                    {
+                      "fontFamily": "Lato-Bold",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                ₹ 650.50
+              </Text>
+            </View>
+          </View>
+          <View
+            style={
+              {
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+              }
+            }
+          >
+            <Text
+              style={
+                [
+                  [
+                    {
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    },
+                    {
+                      "fontFamily": "Lato-Regular",
+                    },
+                    {
+                      "color": "#484848",
+                    },
+                  ],
+                  undefined,
+                  undefined,
+                ]
+              }
+            >
+              100
+            </Text>
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Text
+                style={
+                  [
+                    [
+                      {
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      },
+                      {
+                        "fontFamily": "Lato-Regular",
+                      },
+                      {
+                        "color": "#484848",
+                      },
+                    ],
+                    undefined,
+                    undefined,
+                  ]
+                }
+              >
+                P/L: 
+              </Text>
+              <Text
+                style={
+                  [
+                    [
+                      {
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      },
+                      {
+                        "fontFamily": "Lato-Regular",
+                      },
+                      {
+                        "color": "#484848",
+                      },
+                    ],
+                    {
+                      "fontFamily": "Lato-Bold",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                ₹ 37020.00
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "backgroundColor": "#efefef",
+              "height": 1,
+              "marginLeft": 20,
+              "marginRight": 20,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View
+          style={
+            {
+              "backgroundColor": "#FFFFFF",
+              "paddingHorizontal": 16,
+              "paddingVertical": 12,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+              }
+            }
+          >
+            <Text
+              style={
+                [
+                  [
+                    {
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    },
+                    {
+                      "fontFamily": "Lato-Regular",
+                    },
+                    {
+                      "color": "#484848",
+                    },
+                  ],
+                  {
+                    "fontFamily": "Lato-Bold",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              Reliance
+            </Text>
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Text
+                style={
+                  [
+                    [
+                      {
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      },
+                      {
+                        "fontFamily": "Lato-Regular",
+                      },
+                      {
+                        "color": "#484848",
+                      },
+                    ],
+                    undefined,
+                    undefined,
+                  ]
+                }
+              >
+                LTP: 
+              </Text>
+              <Text
+                style={
+                  [
+                    [
+                      {
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      },
+                      {
+                        "fontFamily": "Lato-Regular",
+                      },
+                      {
+                        "color": "#484848",
+                      },
+                    ],
+                    {
+                      "fontFamily": "Lato-Bold",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                ₹ 2887.10
+              </Text>
+            </View>
+          </View>
+          <View
+            style={
+              {
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+              }
+            }
+          >
+            <Text
+              style={
+                [
+                  [
+                    {
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    },
+                    {
+                      "fontFamily": "Lato-Regular",
+                    },
+                    {
+                      "color": "#484848",
+                    },
+                  ],
+                  undefined,
+                  undefined,
+                ]
+              }
+            >
+              10
+            </Text>
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Text
+                style={
+                  [
+                    [
+                      {
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      },
+                      {
+                        "fontFamily": "Lato-Regular",
+                      },
+                      {
+                        "color": "#484848",
+                      },
+                    ],
+                    undefined,
+                    undefined,
+                  ]
+                }
+              >
+                P/L: 
+              </Text>
+              <Text
+                style={
+                  [
+                    [
+                      {
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      },
+                      {
+                        "fontFamily": "Lato-Regular",
+                      },
+                      {
+                        "color": "#484848",
+                      },
+                    ],
+                    {
+                      "fontFamily": "Lato-Bold",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                ₹ 1068.00
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

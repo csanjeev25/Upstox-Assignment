@@ -2,6 +2,7 @@ import React, { SetStateAction } from "react";
 import { ActivityIndicator, StyleSheet, View } from "react-native";
 import { colors, spacing, strings } from "src/values";
 import { ListEmptyScreen } from "src/components";
+import { testIdProps } from "src/utils";
 
 export interface EmbryonicComponentProps {
   /**
@@ -44,7 +45,7 @@ export const EmbryonicComponent = ({
 
   if (isLoading) {
     return (
-        <View style={styles.container}>
+        <View style={styles.container} {...testIdProps("loading-component")}>
           <ActivityIndicator style={styles.container} size="large" color='purple' />
         </View>
       )
@@ -61,7 +62,7 @@ export const EmbryonicComponent = ({
 
   if (hasError) {
     return (
-      <ListEmptyScreen displayText={strings.somethingWentWrong} onClickHandler={tryAgainHandler} />
+      <ListEmptyScreen displayText={strings.somethingWentWrong} onClickHandler={tryAgainHandler} {...testIdProps("list-empty-component")}/>
     )
   }
 
