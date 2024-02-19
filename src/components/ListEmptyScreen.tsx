@@ -11,17 +11,21 @@ interface IProps {
   /*
     on click retry
   */
-  onClickHandler: () => void
+  onClickHandler?: () => void
 }
 
 export function ListEmptyScreen(props: IProps) {
   const { displayText, onClickHandler } = props
   return (
     <View style={styles.container}>
-      <TouchableOpacity onPress={onClickHandler}>
+      {onClickHandler ? (
+        <TouchableOpacity onPress={onClickHandler}>
+          <Text style={styles.displayText} text={displayText} size="md"></Text>
+          <Text style={styles.button} size="lg" text="Retry"></Text>
+        </TouchableOpacity>
+      ) : (
         <Text style={styles.displayText} text={displayText} size="md"></Text>
-        <Text style={styles.button} size="lg" text="Retry"></Text>
-      </TouchableOpacity>
+      )}
     </View>
   )
 }

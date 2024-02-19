@@ -40,9 +40,9 @@ export function Header(props: HeaderProps) {
     containerStyleOverride,
     safeAreaEdges,
   } = props
-  const $containerInsets = useSafeAreaInsetsStyle(safeAreaEdges)
+  //const $containerInsets = useSafeAreaInsetsStyle(safeAreaEdges)
   return (
-    <View style={[$containerInsets, containerStyleOverride ? containerStyleOverride : styles.container]}>
+    <View style={[containerStyleOverride ? containerStyleOverride : styles.container]}>
       <Text
         size="md"
         text={title}

@@ -6,8 +6,9 @@ import { useFetch } from "src/hooks"
 import { apiUrls } from "src/services"
 import { MemoizedPortfolioContainer } from "src/screens/portfolio"
 import { testIdProps } from "src/utils"
+import withBaseComponent from "src/hoc/withBaseComponent"
 
-export function PortfolioScreen(): React.JSX.Element {
+function PortfolioScreenMain(): React.JSX.Element {
   const {
     hasInternetConnection,
     hasError,
@@ -42,6 +43,8 @@ export function PortfolioScreen(): React.JSX.Element {
     </View>
   )
 }
+
+export const PortfolioScreen = withBaseComponent()(PortfolioScreenMain);
 
 const styles = StyleSheet.create({
   container: { backgroundColor: colors.palette.greyish, flex: 1, flexDirection: "column" },

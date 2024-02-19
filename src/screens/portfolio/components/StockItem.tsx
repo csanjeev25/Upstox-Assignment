@@ -3,6 +3,7 @@ import { StyleSheet, View } from "react-native"
 import { spacing, colors, typography, strings } from "src/values"
 import { Text } from "src/components"
 import { calculateProfitLoss, IStockItem } from "src/screens/portfolio"
+import ErrorBoundary from "src/components/ErrorBoundary"
 
 export function StockItem(props: IStockItem) {
   const { stockData, index } = props
@@ -23,22 +24,24 @@ export function StockItem(props: IStockItem) {
   }
 
   return (
-    <View style={styles.summary}>
-      <View style={styles.summaryItem}>
-        <Text text={symbol} style={{ fontFamily: typography.primary.bold }} />
-        <View style={{ flexDirection: 'row' }}>
-          <Text text="LTP: " />
-          <Text style={{ fontFamily: typography.primary.bold }} text={getLTPText()}/>
+    <ErrorBoundary>
+      <View style={styles.summary}>
+        <View style={styles.summaryItem}>
+          <Text text={symbol} style={{ fontFamily: typography.primary.bold }} />
+          <View style={{ flexDirection: "row" }}>
+            <Text text="LTP: " />
+            <Text style={{ fontFamily: typography.primary.bold }} text={getLTPText()} />
+          </View>
+        </View>
+        <View style={styles.summaryItem}>
+          <Text text={`${quantity}`} />
+          <View style={{ flexDirection: "row" }}>
+            <Text text="P/L: " />
+            <Text style={{ fontFamily: typography.primary.bold }} text={getProfitLossText()} />
+          </View>
         </View>
       </View>
-      <View style={styles.summaryItem}>
-        <Text text={`${quantity}`} />
-        <View style={{ flexDirection: 'row' }}>
-          <Text text="P/L: " />
-          <Text style={{ fontFamily: typography.primary.bold }} text={getProfitLossText()}/>
-        </View>
-      </View>
-    </View>
+    </ErrorBoundary>
   )
 }
 
